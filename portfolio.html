@@ -19,35 +19,37 @@
 </head>
 
 <body class="page">
-
-<body>
 	<!-- Хедер -->
 	<header class="header">
-		<nav class="nav">
-			<a class="header-logo" href="./index.html" lang="en"> <span class="logo-primary">Web</span><span
-					class="logo-secondary">Studio</span></a>
-			<ul class="nav-list">
-				<li class="nav-link"><a class="nav-link-txt" href="./index.html">Студия</a></li>
-				<li class="nav-link"><a class="nav-link-txt" href="./portfolio.html">Портфолио</a></li>
-				<li class="nav-link"><a class="nav-link-txt" href="">Контакты</a></li>
+		<div class="container nav-main">
+			<nav class="nav">
+				<a class="header-logo" href="./index.html" lang="en"> <span class="logo-primary">Web</span><span
+						class="logo-secondary">Studio</span></a>
+				<ul class="nav-list">
+					<li class="nav-link"><a class="nav-link-txt" href="./index.html">Студия</a></li>
+					<li class="nav-link"><a class="nav-link-txt" href="./portfolio.html">Портфолио</a></li>
+					<li class="nav-link"><a class="nav-link-txt" href="">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="auth-nav">
+				<li class="outh-link"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				</li>
+				<li class="outh-link"><a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
 			</ul>
-		</nav>
-		<ul class="auth-nav">
-			<li class="outh-link"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-			<li class="outh-link"><a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
-		</ul>
+		</div>
 	</header>
 	<!-- Уникальный контент -->
 	<main>
 		<!-- Фильтр страницы "Портфолио" -->
-		<section class="portfolio">
+		<section class="portfolio section">
+			<div class="container">
 			<h1 class="portfolio-title">Портфолио</H1>
 			<ul class="portfolio-list">
-				<li><button class="portfolio-btn" type="button">Все</button></li>
-				<li><button class="portfolio-btn" type="button">Веб-сайты</button></li>
-				<li><button class="portfolio-btn" type="button">Приложения</button></li>
-				<li><button class="portfolio-btn" type="button">Дизайн</button></li>
-				<li><button class="portfolio-btn" type="button">Маркетинг</button></li>
+				<li class="list-btn"><button class="portfolio-btn" type="button">Все</button></li>
+				<li class="list-btn"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
+				<li class="list-btn"><button class="portfolio-btn" type="button">Приложения</button></li>
+				<li class="list-btn"><button class="portfolio-btn" type="button">Дизайн</button></li>
+				<li class="list-btn"><button class="portfolio-btn" type="button">Маркетинг</button></li>
 			</ul>
 			<!-- Портфолио -->
 			<ul class="portfolio-list">
@@ -115,10 +117,12 @@
 					</a>
 				</li>
 			</ul>
+			</div>
 		</section>
 	</main>
 	<!-- Футер -->
-	<footer class="footer">
+<footer class="footer">
+	<div class="container">
 		<a class="footer-logo" href="./index.html"> <span class="footer-logo-prim">Web</span><span
 				class="footer-logo-sec">Studio</span> </a>
 		<address class="address">
@@ -135,6 +139,7 @@
 				</li>
 			</ul>
 		</address>
-	</footer>
+	</div>
+</footer>
 </body>
 </html>
