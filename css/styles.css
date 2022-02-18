@@ -23,8 +23,34 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-/* Хедер */
+/* Сброс стилей от нормализации */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding: 0;
+}
+/* Контейнер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* Хедер */
+.header {
+  display: flex;
+  align-items: center;
+}
 /* Лого */
 .logo-primary,
 .logo-secondary {
@@ -42,6 +68,24 @@ body {
 }
 
 /* Основаная навигация */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
   list-style-type: none;
 }
@@ -53,6 +97,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-font-color);
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-link-txt:focus,
 .nav-link-txt:hover {
@@ -60,9 +107,18 @@ body {
 }
 
 /* Контактные данные */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .outh-link {
   list-style-type: none;
 }
+.outh-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-mail,
 .header-phone {
   font-family: var(--main-font);
@@ -83,6 +139,15 @@ body {
 .hero {
   background-color: var(--secondary-bg-color);
 }
+.hero-content {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-content {
+  text-align: center;
+}
+
 .heto-title {
   font-weight: 900;
   font-size: 44px;
@@ -91,6 +156,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sec-bg-font-color);
+  width: 696px;
+  margin: 0px auto;
+  margin-bottom: 30px;
 }
 .hero-btn {
   font-family: var(--main-font);
@@ -98,13 +166,17 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--sec-bg-font-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  min-width: 200px;
+  height: 50px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
