@@ -374,6 +374,7 @@ ol {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
 .portfolio-item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -390,12 +391,14 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-font-color);
+  margin-left: 24px;
 }
 .portfolio-item-name {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  margin-left: 24px;
 }
 /* Скрытие логических заголовков */
 .features-title,
