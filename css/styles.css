@@ -36,6 +36,13 @@ p {
 ul,
 ol {
   padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Контейнеры */
 .container {
@@ -150,11 +157,11 @@ ol {
 /* Уникальный контент страницы */
 .hero {
   background-color: var(--secondary-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-content {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .hero-content {
   text-align: center;
@@ -201,7 +208,6 @@ ol {
 /* Наши особенности */
 .features-list {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .features-item:not(:last-child) {
@@ -221,6 +227,7 @@ ol {
 .features-text {
   line-height: 1.71;
   color: var(--secondary-font-color);
+  margin-top: 10px;
 }
 /* Чем мы занимаемся */
 .about {
@@ -260,6 +267,14 @@ ol {
 .team-list {
   list-style-type: none;
 }
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--main-bg-color);
+  padding-bottom: 30px;
+}
+
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
@@ -268,18 +283,19 @@ ol {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
 }
 .team-card-txt {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  margin-top: 10px;
 }
 
 /* Футер */
 .footer {
   background-color: var(--secondary-bg-color);
-  text-align: left;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -305,6 +321,10 @@ ol {
 .address-item {
   list-style-type: none;
 }
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-link {
   font-family: var(--main-font);
   font-style: normal;
@@ -313,11 +333,15 @@ ol {
   color: var(--sec-bg-font-color);
   text-decoration: none;
 }
+.address-list {
+  margin-top: 20px;
+}
+
 .address-mail,
 .address-phone {
   font-family: var(--main-font);
   font-style: normal;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -336,9 +360,8 @@ ol {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-btn {
   font-family: var(--main-font);
@@ -370,9 +393,6 @@ ol {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-item:nth-child(3n) {
@@ -385,20 +405,25 @@ ol {
 .portfolio-card {
   text-decoration: none;
 }
+.card-txt {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
 .portfolio-item-ttl {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-font-color);
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .portfolio-item-name {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
-  margin-left: 24px;
 }
 /* Скрытие логических заголовков */
 .features-title,
